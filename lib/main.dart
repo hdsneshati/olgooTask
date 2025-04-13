@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
-import './pages.dart/first_page.dart';
-import './pages.dart/second_page.dart';
-import './pages.dart/third_page.dart';
+import 'package:flutter_application_ui_olgoo/bloc.dart/auth.bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'pages.dart/login_screen.dart';
+import 'pages.dart/otp_verification_screen.dart';
+import 'pages.dart/user_registration_screen.dart';
 import 'theme/light_theme.dart';
 import 'theme/dark_theme.dart';
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiBlocProvider(
+    providers: [
+      BlocProvider(
+        create: (context) => AuthBloc(),
+      ),
+    ],
+    child:MyApp(),
+  ));
 }
 
 class MyApp extends StatefulWidget {
