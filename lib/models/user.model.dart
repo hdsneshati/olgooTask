@@ -33,7 +33,7 @@ class UserModel {
       registerDate: DateTime.parse(json['registerDate']),
       updatedAt: DateTime.parse(json['updatedAt']),
       status: json['status'],
-      role: json['role'],
+      role: json['role'][0],
       company: CompanyModel.fromJson(json['company']),
       tokens: TokenModel.fromJson(json['tokens']),
     );

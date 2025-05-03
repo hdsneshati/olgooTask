@@ -4,7 +4,7 @@ import 'app_colors.dart';
 
 final darkTheme = ThemeData(
   brightness: Brightness.dark,
-  colorScheme: ColorScheme(
+  colorScheme:const ColorScheme(
    brightness: Brightness.dark, // تعیین نوع تم: تاریک (Dark Theme)
    primary: AppColors.primary, // رنگ اصلی برنامه (مثلاً رنگ دکمه‌ها یا نوار بالا)
    onPrimary: Colors.black, // رنگ نوشته‌هایی که روی رنگ primary قرار می‌گیرند (مثل متن دکمه‌ها)

@@ -39,6 +39,7 @@ dependencies:
   dio: ^5.8.0+1
   bloc: ^9.0.0
   flutter_bloc: ^9.1.0
+  flutter_svg: ^2.0.17
   
 
 dev_dependencies:
@@ -67,7 +68,41 @@ flutter:
   assets:
     - lib/assets/images/photo_۲۰۲۵-۰۳-۲۸_۰۳-۰۳-۳۳.jpg
   #   - images/a_dot_ham.jpeg
-
+    - lib/assets/icons/chart.svg
+    - lib/assets/icons/Home.svg
+    - lib/assets/icons/chart.svg
+    - lib/assets/icons/user-octagon.svg
+    - lib/assets/icons/dashboard/graph.svg
+    - lib/assets/icons/dashboard/product.svg
+    - lib/assets/icons/dashboard/tag.svg
+    - lib/assets/icons/dashboard/note-2.svg
+    - lib/assets/icons/dashboard/Avatar.svg
+    - lib/assets/icons/dashboard/notification.svg
+    - lib/assets/icons/dashboard/setting-2.svg
+    - lib/assets/icons/order/add.svg
+    - lib/assets/icons/order/calander.svg
+    - lib/assets/icons/order/filter.svg
+    - lib/assets/icons/order/paperclip-2.svg
+    - lib/assets/icons/order/Search.svg
+    - lib/assets/icons/order/tag.svg
+    - lib/assets/icons/analiz/Arrow Right.svg
+    - lib/assets/icons/analiz/Image.svg
+    - lib/assets/icons/analiz/note.svg
+    - lib/assets/icons/analiz/shirt-9093116 1.svg
+    - lib/assets/icons/analiz/Image2.svg
+    - lib/assets/icons/management/box.svg
+    - lib/assets/icons/management/profile-2user.svg
+    - lib/assets/icons/management/security-safe.svg
+    - lib/assets/icons/management/tag.svg
+    - lib/assets/icons/management/video-play.svg
+    - lib/assets/icons/management/handle.svg
+    - lib/assets/icons/management/Arrow Right.svg
+    - lib/assets/icons/management/Avatar.svg
+    - lib/assets/icons/management/chevron-left.svg
+    - lib/assets/icons/management/Ellipse 17.svg
+    - lib/assets/icons/management/Edit.svg
+    - lib/assets/icons/management/IconButton.svg
+    - lib/assets/icons/management/trailing-icon-wrapper.svg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

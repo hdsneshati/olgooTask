@@ -1,7 +1,9 @@
 import 'package:dio/dio.dart';
 
 class NetworkHandler{
+  static const String baseurl = "https://api2-dev.olgooapp.ir";
   sendOtp(String phonNumber) async{
+    
     String url = "https://api2.olgooapp.ir/otp/$phonNumber";
     Dio dio =Dio();
 
@@ -14,14 +16,14 @@ class NetworkHandler{
       print("error");
     }
   }
-  verfiyOtp()async{
-    String url="https://api2.olgooapp.ir/swagger#/authentication/AuthenticationController_OTPVerify";
+  verfiyOtp({required String phonenumber, required String code})async{
+    String url="https://api2.olgooapp.ir/otpVerify/";
     Dio dio =Dio();
      try{
       Response response =await dio.post(
         url,
-        data: {"phoneNumber": "string",
-               "otp": "string",
+        data: {"phoneNumber": phonenumber,
+               "otp": code,
               },
               );
       if(response.statusCode == 201){

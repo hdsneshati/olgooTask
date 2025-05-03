@@ -6,7 +6,7 @@ final lightTheme = ThemeData(
   useMaterial3:true,
   fontFamily: "Yekan",
   brightness: Brightness.light,
-  colorScheme: ColorScheme(
+  colorScheme:const ColorScheme(
     brightness: Brightness.light,
     primary: AppColors.primary,
     onPrimary: Colors.white,

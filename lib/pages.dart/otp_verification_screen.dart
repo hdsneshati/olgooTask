@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_ui_olgoo/bloc.dart/auth.bloc.dart';
-import 'package:flutter_application_ui_olgoo/pages.dart/model.page.dart';
-import 'package:flutter_application_ui_olgoo/pages.dart/user_registration_screen.dart';
+import 'package:flutter_application_ui_olgoo/bloc/auth.bloc.dart';
+import 'package:flutter_application_ui_olgoo/pages.dart/screens/dashboard_screen.dart';
+import 'package:flutter_application_ui_olgoo/pages.dart/user_registration/user_registration_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'dart:async';
 
-class SecondPage extends StatefulWidget {
+class OtpVerificationScreen extends StatefulWidget {
   var phone;
 
-  SecondPage({required this.phone});
+  OtpVerificationScreen({required this.phone});
   @override
-  State<SecondPage> createState() => _SecondPageState();
+  State<OtpVerificationScreen> createState() => _OtpVerificationScreenState();
 }
 
-class _SecondPageState extends State<SecondPage> {
+class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
   int _timeLeft = 60; // ثانیه‌های باقی‌مانده
   Timer? _timer;
   String enteredCode = "";
@@ -193,7 +193,7 @@ class _SecondPageState extends State<SecondPage> {
                  Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Model(),
+                        builder: (context) => UserRegistrationScreen(),
                       ),);
                       
                   }
